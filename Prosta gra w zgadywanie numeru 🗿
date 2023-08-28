@@ -1,0 +1,20 @@
+from random import randint
+
+def 主要的():
+    計算機的選擇 = randint(1, 100)
+    while True:
+        try:
+            數字 = int(input("選擇 1 到 100 之間的數字: "))
+            
+        except ValueError:
+            print("給定的數字不正確。 準備好承擔後果吧！")
+        
+        if 數字 == 計算機的選擇:
+            print("恭喜！ 你猜對了")
+            break
+        elif 數字 > 計算機的選擇:
+            print("猜測的數字大於計算機的數字")
+        else:
+            print("給定的數字大於計算機抽出的數字")
+            
+主要的()
